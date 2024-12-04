@@ -10,6 +10,17 @@ const router = createRouter({
 			component: () => import("../views/HomeView.vue"),
 		},
 		{
+			path: "/lesson-text-interpolation-vue",
+			name: "lesson-interpolation",
+			component: () =>
+				import("../views/lessons/LessonTextInterpolation.vue"),
+		},
+		{
+			path: "/exo-text-interpolation",
+			name: "exo-interpolation",
+			component: () => import("../views/exo/ExoTextInterpolation.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),
