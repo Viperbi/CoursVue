@@ -77,8 +77,8 @@
 								<router-link
 									class="dropdown-item"
 									aria-current="page"
-									to="/lesson-text-interpolation-vue"
-									>Text-Interpolation</router-link
+									to="/lesson-attribute"
+									>Attribute Binding</router-link
 								>
 							</li>
 							<li><hr class="dropdown-divider" /></li>
@@ -89,10 +89,26 @@
 							</li>
 						</ul>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" aria-disabled="true"
-							>Disabled</a
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
 						>
+							TP
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/tp-dataBinding"
+									>Data Binding</router-link
+								>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<form class="d-flex" role="search">

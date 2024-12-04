@@ -12,7 +12,7 @@ function calcul(){
   if (nb<0.5){
     return "inférieur à 0,5";
   }
-  return "supérieur à 0,5";
+    return "supérieur à 0,5";
 }
 const props = defineProps({
   // v-model

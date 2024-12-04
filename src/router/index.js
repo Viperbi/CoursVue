@@ -26,6 +26,16 @@ const router = createRouter({
 			component: () => import("../views/exo/MethodExecutionComp.vue"),
 		},
 		{
+			path: "/lesson-attribute",
+			name: "lesson-attrivute",
+			component: () => import("../views/lessons/AttributeBinding.vue"),
+		},
+		{
+			path: "/tp-dataBinding",
+			name: "tp-dataBinding",
+			component: () => import("../views/tp/DataBinding.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),
