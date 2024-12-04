@@ -8,24 +8,10 @@ import Footer from "./components/shared/Footer.vue";
 	<NavBar></NavBar>
 	<h1>On est dans App.vue</h1>
 	<Footer></Footer>
+  <router-view class="min-vh-100"></router-view>
 </template>
 
 <style scoped></style>
-
-<template>
-	<div>
-		<router-view class="min-vh-100"></router-view>
-		<a href="https://vite.dev" target="_blank">
-			<img src="/vite.svg" class="logo" alt="Vite logo" />
-		</a>
-		<a href="https://vuejs.org/" target="_blank">
-			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-		</a>
-	</div>
-	<HelloWorld msg="Vite + Vue" />
-</template>
-
-<style scoped>
 .logo {
 	height: 6em;
 	padding: 1.5em;
