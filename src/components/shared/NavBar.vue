@@ -52,6 +52,15 @@
 									>Exo méthode</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-eventBinding"
+									>Event Binding</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -73,6 +82,7 @@
 									>Text-Interpolation</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
 							<li>
 								<router-link
 									class="dropdown-item"
@@ -106,6 +116,15 @@
 									aria-current="page"
 									to="/tp-dataBinding"
 									>Data Binding</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/tp-eventBinding"
+									>Event Binding</router-link
 								>
 							</li>
 						</ul>

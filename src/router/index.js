@@ -36,6 +36,16 @@ const router = createRouter({
 			component: () => import("../views/tp/DataBinding.vue"),
 		},
 		{
+			path: "/exo-eventBinding",
+			name: "exo-eventBinding",
+			component: () => import("../views/exo/EventBinding.vue"),
+		},
+		{
+			path: "/tp-eventBinding",
+			name: "tp-eventBinding",
+			component: () => import("../views/tp/EventBinding.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

@@ -3,7 +3,7 @@
 		<h1>TP Data Binding - Profile User</h1>
 		<img :src="img" alt="" />
 		<br />
-		<p>{{ nom }}</p>
+		<p :textcontent="nom"></p>
 		<input class="card-text" type="text" :value="nom" />
 		<p>{{ age }} ans</p>
 		<p>Age + 10 = {{ age10() }} ans</p>
