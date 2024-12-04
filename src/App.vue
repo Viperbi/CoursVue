@@ -7,11 +7,11 @@ import Footer from "./components/shared/Footer.vue";
 <template>
 	<NavBar></NavBar>
 	<h1>On est dans App.vue</h1>
+	<router-view class="min-vh-100"></router-view>
 	<Footer></Footer>
-  <router-view class="min-vh-100"></router-view>
 </template>
 
-<style scoped></style>
+<style scoped>
 .logo {
 	height: 6em;
 	padding: 1.5em;
