@@ -1,6 +1,16 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
+import NavBar from "./components/shared/NavBar.vue";
+import Footer from "./components/shared/Footer.vue";
 </script>
+
+<template>
+	<NavBar></NavBar>
+	<h1>On est dans App.vue</h1>
+	<Footer></Footer>
+</template>
+
+<style scoped></style>
 
 <template>
 	<div>
