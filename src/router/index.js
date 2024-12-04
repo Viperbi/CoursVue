@@ -21,6 +21,11 @@ const router = createRouter({
 			component: () => import("../views/exo/ExoTextInterpolation.vue"),
 		},
 		{
+			path: "/exo-methode",
+			name: "exo-methode",
+			component: () => import("../views/exo/MethodExecutionComp.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

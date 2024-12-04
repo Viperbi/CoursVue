@@ -45,8 +45,11 @@
 							<li></li>
 							<li><hr class="dropdown-divider" /></li>
 							<li>
-								<a class="dropdown-item" href="#"
-									>Something else here</a
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-methode"
+									>Exo méthode</router-link
 								>
 							</li>
 						</ul>
