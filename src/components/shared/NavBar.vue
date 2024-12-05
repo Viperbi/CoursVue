@@ -61,6 +61,15 @@
 									>Event Binding</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-bug"
+									>Bug</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -89,6 +98,15 @@
 									aria-current="page"
 									to="/lesson-attribute"
 									>Attribute Binding</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/lesson-Vmodel"
+									>Vmodel</router-link
 								>
 							</li>
 							<li><hr class="dropdown-divider" /></li>

@@ -1,23 +1,48 @@
 <template>
-	<div class="card">
-		<input v-on:keyup="getKey" type="text" />
-		<p>{{ text1 }}</p>
-		<input v-on:keyup.esc="afficherText" type="text" />
-		<p>{{ text2 }}</p>
+	<div class="d-flex justify-content-center align-items-center my-2">
+		<div
+			class="btn-group"
+			role="group"
+			aria-label="Basic mixed styles example"
+		>
+			<button v-on:click="retrait()" type="button" class="btn btn-danger">
+				-
+			</button>
+			<h3 class="mx-3">Le nombre : {{ n }}</h3>
+			<button v-on:click="ajout()" type="button" class="btn btn-success">
+				+
+			</button>
+		</div>
+		<br />
+		<div>
+			<br />
+			<p>{{ faire() }}</p>
+		</div>
 	</div>
 </template>
 
 <script setup lang="js">
 import { computed, watch, onMounted, onUpdated, onBeforeUnmount,ref } from 'vue'
 
-const text1 = ref("");
-const text2 = ref("");
-function getKey(event){
-  text1.value = event.target.value;
+
+let n = ref(0);
+let userName = ref("");
+function ajout(){
+  n.value+=1;
 }
-function afficherText(event){
-  text2.value = event.target.value;
+function retrait(){
+  n.value-=1;
 }
+
+function faire(){
+  console.log(userName.value);
+  if(userName.value == "" || userName.value == null){
+    return "test";
+  }else if(userName.value != ""){
+    return "un autre test"
+  }
+}
+
 const props = defineProps({
   // v-model
   modelValue: {

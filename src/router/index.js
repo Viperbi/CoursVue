@@ -46,6 +46,16 @@ const router = createRouter({
 			component: () => import("../views/tp/EventBinding.vue"),
 		},
 		{
+			path: "/lesson-Vmodel",
+			name: "lesson-Vmodel",
+			component: () => import("../views/lessons/Vmodel.vue"),
+		},
+		{
+			path: "/exo-bug",
+			name: "exo-bug",
+			component: () => import("../views/exo/ExoBug.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),
