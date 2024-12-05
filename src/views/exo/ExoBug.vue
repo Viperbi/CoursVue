@@ -35,7 +35,7 @@ function retrait(){
 }
 
 function faire(){
-  console.log(userName.value);
+  console.log("Fonction exécutée");
   if(userName.value == "" || userName.value == null){
     return "test";
   }else if(userName.value != ""){
