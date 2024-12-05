@@ -66,6 +66,11 @@ const router = createRouter({
 			component: () => import("../views/tp/Reactivite.vue"),
 		},
 		{
+			path: "/exo-dynamic",
+			name: "exo-dynamic",
+			component: () => import("../views/exo/DynamicStyling.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

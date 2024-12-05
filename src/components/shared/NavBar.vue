@@ -70,6 +70,15 @@
 									>Bug</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-dynamic"
+									>Dynamic Styling</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
