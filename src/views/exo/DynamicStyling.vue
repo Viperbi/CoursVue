@@ -1,35 +1,41 @@
 <template>
 	<div
 		class="card"
-		:style="{ backgroundColor: color1 }"
-		v-on:click="div1()"
+		:class="{ div1Color: red, baseColor: base }"
+		v-on:click="div1"
 	></div>
 	<div
 		class="card"
-		:style="{ backgroundColor: color2 }"
-		v-on:click="div2()"
+		:class="{ div2Color: blue, baseColor: base2 }"
+		v-on:click="div2"
 	></div>
 </template>
 
 <script setup lang="js">
 import { computed, watch, onMounted, onUpdated, onBeforeUnmount,ref } from 'vue'
 
-const color1 = ref("");
-const color2 = ref("");
+const red = ref(false);
+const blue = ref(false);
+const base = ref(true);
+const base2 = ref(true);
 
 function div1(){
-  if (color1.value == "red"){
-    color1.value = "white";
+  if(base.value == true){
+    red.value = true;
+    base.value = false;
   }else{
-    color1.value = "red";
+    red.value = false;
+    base.value = true;
   }
 }
 
 function div2(){
-  if (color2.value == "blue"){
-    color2.value = "white";
+  if(base2.value == true){
+    blue.value = true;
+    base2.value = false;
   }else{
-    color2.value = "blue";
+    blue.value = false;
+    base2.value = true;
   }
 }
 
@@ -74,4 +80,14 @@ onBeforeUnmount(() => {
 });
 </script>
 
-<style scoped lang="css"></style>
+<style scoped lang="css">
+.div1Color {
+	background-color: red;
+}
+.div2Color {
+	background-color: blue;
+}
+.baseColor {
+	background-color: white;
+}
+</style>
