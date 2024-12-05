@@ -71,6 +71,11 @@ const router = createRouter({
 			component: () => import("../views/exo/DynamicStyling.vue"),
 		},
 		{
+			path: "/tp-dynamic",
+			name: "tp-dynamic",
+			component: () => import("../views/tp/DynamicStyling.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

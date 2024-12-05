@@ -166,6 +166,15 @@
 									>Reactivité</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/tp-dynamic"
+									>Dynamic Styling</router-link
+								>
+							</li>
 						</ul>
 					</li>
 				</ul>
