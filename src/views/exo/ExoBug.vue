@@ -14,7 +14,7 @@
 			</button>
 		</div>
 		<br />
-		<div>
+		<div class="mb-3">
 			<br />
 			<p>{{ faire() }}</p>
 		</div>

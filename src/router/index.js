@@ -56,6 +56,16 @@ const router = createRouter({
 			component: () => import("../views/exo/ExoBug.vue"),
 		},
 		{
+			path: "/lesson-exempleWatchers",
+			name: "lesson-exempleWatchers",
+			component: () => import("../views/lessons/ExempleWatchers.vue"),
+		},
+		{
+			path: "/tp-reactivite",
+			name: "tp-reactivite",
+			component: () => import("../views/tp/Reactivite.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

@@ -111,8 +111,11 @@
 							</li>
 							<li><hr class="dropdown-divider" /></li>
 							<li>
-								<a class="dropdown-item" href="#"
-									>Something else here</a
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/lesson-exempleWatchers"
+									>Exemple Watchers</router-link
 								>
 							</li>
 						</ul>
@@ -143,6 +146,15 @@
 									aria-current="page"
 									to="/tp-eventBinding"
 									>Event Binding</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/tp-reactivite"
+									>Reactivité</router-link
 								>
 							</li>
 						</ul>
