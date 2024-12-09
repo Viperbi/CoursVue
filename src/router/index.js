@@ -76,6 +76,21 @@ const router = createRouter({
 			component: () => import("../views/tp/DynamicStyling.vue"),
 		},
 		{
+			path: "/lesson-listRendering",
+			name: "lesson-listRendering",
+			component: () => import("../views/lessons/ListRendering.vue"),
+		},
+		{
+			path: "/exo-vFor",
+			name: "exo-vFor",
+			component: () => import("../views/exo/VFor.vue"),
+		},
+		{
+			path: "/tp-vIfvFor",
+			name: "tp-vIfvFor",
+			component: () => import("../views/tp/VIfVFor.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),

@@ -79,6 +79,15 @@
 									>Dynamic Styling</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-vFor"
+									>VFor</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -127,6 +136,15 @@
 									>Exemple Watchers</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/lesson-listRendering"
+									>List Rendering</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -173,6 +191,15 @@
 									aria-current="page"
 									to="/tp-dynamic"
 									>Dynamic Styling</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/tp-vIfvFor"
+									>V-if & V-for</router-link
 								>
 							</li>
 						</ul>
