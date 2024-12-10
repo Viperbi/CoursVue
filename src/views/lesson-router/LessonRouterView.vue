@@ -4,11 +4,11 @@
 		<ul>
 			<li v-for="unItem in items" :key="unItem.name">
 				{{ unItem.name }}
-				<button class="btn btn-outline-dark">
-					<router-link
-						:to="{ name: 'Details', params: { id: unItem.id } }"
-					></router-link>
-				</button>
+				<router-link
+					:to="{ name: 'Details', params: { id: unItem.id } }"
+					class="btn btn-primary btn-sm"
+					>Voir les détails</router-link
+				>
 			</li>
 		</ul>
 	</div>

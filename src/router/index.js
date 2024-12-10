@@ -97,7 +97,7 @@ const router = createRouter({
 				import("../views/lesson-router/LessonRouterView.vue"),
 		},
 		{
-			path: "/details/:id",
+			path: "/lesson-router/details/:id",
 			name: "Details",
 			component: () => import("../views/details/DetailsPage.vue"),
 			props: true,
