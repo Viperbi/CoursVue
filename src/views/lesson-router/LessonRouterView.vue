@@ -16,7 +16,6 @@
 
 <script setup lang="js">
 import { computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
-import DetailsPage from '../details/DetailsPage.vue';
 
 const items = [
   { id: 1, name: 'Élément 1' },
