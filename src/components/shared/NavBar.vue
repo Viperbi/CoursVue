@@ -204,6 +204,27 @@
 							</li>
 						</ul>
 					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Autre
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/lesson-router"
+									>Router</router-link
+								>
+							</li>
+						</ul>
+					</li>
 				</ul>
 				<form class="d-flex" role="search">
 					<input

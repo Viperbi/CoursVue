@@ -91,6 +91,18 @@ const router = createRouter({
 			component: () => import("../views/tp/VIfVFor.vue"),
 		},
 		{
+			path: "/lesson-router",
+			name: "lesson-router",
+			component: () =>
+				import("../views/lesson-router/LessonRouterView.vue"),
+		},
+		{
+			path: "/details/:id",
+			name: "Details",
+			component: () => import("../views/details/DetailsPage.vue"),
+			props: true,
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),
