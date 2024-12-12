@@ -120,6 +120,11 @@ const router = createRouter({
 			component: () => import("../views/LoginPageView.vue"),
 		},
 		{
+			path: "/tp-communication",
+			name: "tp-communication",
+			component: () => import("../views/tp/ActiveUser.vue"),
+		},
+		{
 			path: "/dashboard",
 			name: "Dashboard",
 			component: () => import("../views/DashboardView.vue"),
