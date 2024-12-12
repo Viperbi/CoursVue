@@ -1,8 +1,8 @@
 <template>
 	<div class="card container">
-		<p class="p" v-if="data == true">{{ name }}</p>
+		<p class="p">{{ name }}</p>
 		<br />
-		<p class="p" v-if="data == true">{{ age }} ans</p>
+		<p class="p">{{ age }} ans</p>
 	</div>
 	<UserData @submitData="updateData" :name="name" :age="age"></UserData>
 </template>
@@ -11,7 +11,6 @@
 import { computed, watch, onMounted, onUpdated, onBeforeUnmount,ref } from 'vue'
 import UserData from './UserData.vue';
 
-const data = ref(true);
 const name = ref()
 const age = ref()
 
