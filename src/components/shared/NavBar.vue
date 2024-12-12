@@ -23,6 +23,14 @@
 							>Home</router-link
 						>
 					</li>
+					<li class="nav-item">
+						<router-link
+							class="nav-link active"
+							aria-current="page"
+							to="/register"
+							>Register</router-link
+						>
+					</li>
 					<li class="nav-item dropdown">
 						<a
 							class="nav-link dropdown-toggle"
@@ -86,6 +94,15 @@
 									aria-current="page"
 									to="/exo-vFor"
 									>VFor</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/exo-oneFriendv4"
+									>One Friend V4</router-link
 								>
 							</li>
 						</ul>

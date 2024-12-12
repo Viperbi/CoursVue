@@ -1,5 +1,5 @@
 <template>
-	<EmitOneFriendIdComp
+	<OneFriendv4
 		v-for="unAmi in lesAmis"
 		:key="unAmi.id"
 		:id="unAmi.id"
@@ -7,12 +7,14 @@
 		:unAmiPhone="unAmi.phone"
 		:unAmiMail="unAmi.email"
 		:premium="unAmi.premium"
-	></EmitOneFriendIdComp>
+		@mon-event-premium="reactionStatus"
+	></OneFriendv4>
 </template>
 
 <script setup lang="js">
 import { ref } from 'vue';
-import EmitOneFriendIdComp from '../components/EmitOneFriendIdComp.vue';
+import OneFriendv4 from './OneFriendv4.vue';
+
 const lesAmis = ref([
   {
       id: 'lasticot',
@@ -43,4 +45,8 @@ const lesAmis = ref([
       premium: true
   }
 ]);
+
+function reactionStatus(){
+  console.log("test")
+}
 </script>

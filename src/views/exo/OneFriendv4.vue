@@ -21,6 +21,8 @@
 <script setup lang="js">
 import { ref, defineProps, defineEmits } from 'vue';
 
+const emit = defineEmits(['mon-event-premium']);
+
 const props = defineProps({
   id: {
     type: String,
@@ -55,6 +57,7 @@ function afficherDetails() {
 
 function afficherPremium() {
   premiumData.value = !premiumData.value;
+  emit('mon-event-premium');
 
 }
 </script>
