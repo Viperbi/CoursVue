@@ -162,6 +162,24 @@
 									>List Rendering</router-link
 								>
 							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/chartJS"
+									>ChartJS</router-link
+								>
+							</li>
+							<li><hr class="dropdown-divider" /></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/counterPinia"
+									>Counter Pinia</router-link
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">

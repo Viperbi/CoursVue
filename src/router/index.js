@@ -131,6 +131,17 @@ const router = createRouter({
 			meta: { requiresAuth: true }, // Route protégée
 		},
 		{
+			path: "/chartJS",
+			name: "chartJS",
+			component: () =>
+				import("../views/lessons/LessonLibraryChartJsView.vue"),
+		},
+		{
+			path: "/counterPinia",
+			name: "counterPinia",
+			component: () => import("../views/CounterPinia.vue"),
+		},
+		{
 			path: "/:pathMatch(.*)*",
 			name: "NotFound",
 			component: () => import("../views/NotFoundView.vue"),
